@@ -122,9 +122,8 @@ function LoginForm() {
     <form onSubmit={onSubmit} noValidate className="flex flex-col gap-4">
       {linkError && !message && (
         <Alert>
-          That email link could not be used. Links work only once, and only in the same browser where you requested
-          them. Request a new one below, then copy the link from the email and paste it into this browser&apos;s
-          address bar.
+          That email link has expired or was already used. Each link works once. Request a new one below and open
+          the newest email.
         </Alert>
       )}
       {message && <Alert tone={message.tone}>{message.text}</Alert>}
